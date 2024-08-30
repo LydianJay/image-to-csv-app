@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:imgtextcsv/views/cameraview.dart';
 import 'package:imgtextcsv/views/mainview.dart';
-import 'package:camera/camera.dart';
 
 class MyApp extends StatelessWidget {
-  final List<CameraDescription> cameras;
-  const MyApp({required this.cameras, super.key});
+  const MyApp({ super.key});
 
 
 
@@ -19,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  CameraView(cameras: cameras),
+      home:  const MainView(),
     );
   }
 }
